@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400..700&family=Gaegu&family=Goldman:wght@400;700&family=Madimi+One&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./estilo.css" />
+</head>
+
+<body>
+    <form method="POST" action="blsblsbls.php" enctype="multipart/form-data">
+        <input type="hidden" name="country" value="BR" />
+
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label>
+                Primeiro Nome: <br />
+                <input type="text" name="name" required />
+            </label><br />
+            <label>
+                Sobrenome: <br />
+                <input type="lastname" name="lastname" />
+            </label><br />
+            <label>
+                Foto:<br />
+                <input type="file" name="photo" accept="application/pdf" />
+            </label><br />
+            <label>
+                E-mail:<br />
+                <input type="text" name="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+[a-z]{2,}$"
+                    title="endereço de email" required />
+            </label><br />
+            <label>
+                Idade: <br />
+                <input type="number" name="age" />
+            </label><br />
+            <label>
+                Data de nascimento:<br />
+                <input type="date" name="birthdate" min="2024-03-23" />
+            </label><br />
+        </fieldset>
+
+        <fieldset>
+            <legend>Dados Profissionais</legend>
+            <label>
+                Nome da empresa: <br />
+                <input type="text" name="companyname" />
+            </label> <br />
+            <label>
+                Cargo na empresa: <br />
+                <input type="text" name="companyjob" />
+            </label> <br />
+        </fieldset>
+        <input type="submit" value="Cadastrar" />
+
+
+    </form>
+</body>
+
+</html>
